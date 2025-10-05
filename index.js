@@ -64,6 +64,8 @@ function addTask() {
     const togglebtn = document.getElementById("togglebutton");
     const togglediv = document.getElementById('togglebg');
     const body = document.body; // Access the whole page 
+    const h1text = document.text;
+
 
     let whitebg = false;//initaially off
 
@@ -75,15 +77,18 @@ function addTask() {
             togglebtn.style.transform = "translateX(2.8rem)";
             togglediv.style.backgroundColor = "#22c55e";
             body.style.backgroundColor = "#374151";
+            text.style.color = "#ffffff"
 
             } else {
             togglebtn.style.transform = "translateX(0)";
             togglediv.style.backgroundColor = "#3B82F6";
             body.style.backgroundColor = "#ffffff";
+            text.style.color = "#3B82F6"
 
         }
     });
 
+    
 
 
         
